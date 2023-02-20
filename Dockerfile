@@ -1,6 +1,5 @@
-FROM amazonlinux:latest
-RUN yum install -y httpd \
-  zip \
+FROM centos/httpd-24-centos7
+RUN yum install -y  zip \
   unzip
 ADD https://www.free-css.com/free-css-templates/download/page247/kindle.zip /var/www/html/
 WORKDIR /var/www/html
