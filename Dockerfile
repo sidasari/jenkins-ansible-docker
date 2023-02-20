@@ -1,5 +1,5 @@
-FROM ubuntu:latest
-RUN apt install -y httpd \
+FROM amazonlinux:latest
+RUN yum install -y httpd \
   zip \
   unzip
 ADD https://www.free-css.com/free-css-templates/download/page247/kindle.zip /var/www/html/
